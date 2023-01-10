@@ -12,8 +12,8 @@
     <h1>PDO CRUD</h1>
 
     <form action="create.php" method="post">
-        <label for="firstname">Voornaam:</label><br>
-        <input type="text" name="firstname" id="firstname"><br>
+        <label for="brand">merk</label><br>
+        <input type="text" name="brand" id="brand"><br>
 
         <label for="infix">Tussenvoegsel:</label><br>
         <input type="text" name="infix" id="infix"><br>

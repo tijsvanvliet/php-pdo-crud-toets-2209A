@@ -22,7 +22,7 @@ try {
  */
 
 $sql = "SELECT Id
-              ,Voornaam
+              ,merk
               ,Tussenvoegsel
               ,Achternaam
         FROM Persoon";
@@ -41,7 +41,7 @@ $tableRows = "";
 
 foreach($result as $info) {
     $tableRows .= "<tr>
-                        <td>$info->Voornaam</td>
+                        <td>$info->merk</td>
                         <td>$info->Tussenvoegsel</td>
                         <td>$info->Achternaam</td>
                         <td>
@@ -56,7 +56,7 @@ foreach($result as $info) {
 
 <table border='1'>
     <thead>
-        <th>Voornaam</th>
+        <th>merk</th>
         <th>Tussenvoegsel</th>
         <th>Achternaam</th>
         <th></th>
