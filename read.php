@@ -48,7 +48,7 @@ foreach($result as $info) {
                         <td>$info->topsnelheid</td>
                         <td>$info->prijs</td>
                         <td>
-                            <a href='delete.php'>
+                            <a href='delete.php?Id=$info->Id''>
                                 <img src='img/b_drop.png' alt='cross'>
                             </a>
                         </td>
