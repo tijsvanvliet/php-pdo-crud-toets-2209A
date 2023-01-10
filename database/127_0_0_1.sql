@@ -26,11 +26,11 @@ USE `php-pdo-crud-2209a`;
 -- --------------------------------------------------------
 
 --
--- Tabelstructuur voor tabel `Persoon`
+-- Tabelstructuur voor tabel `DureAuto`
 --
 
-DROP TABLE IF EXISTS `Persoon`;
-CREATE TABLE IF NOT EXISTS `Persoon` (
+DROP TABLE IF EXISTS `DureAuto`;
+CREATE TABLE IF NOT EXISTS `DureAuto` (
   `Id` smallint(11) UNSIGNED NOT NULL AUTO_INCREMENT,
   `merk` varchar(200) NOT NULL,
   `modelen` varchar(200) NOT NULL,
