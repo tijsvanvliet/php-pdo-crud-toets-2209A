@@ -15,8 +15,8 @@
         <label for="brand">merk</label><br>
         <input type="text" name="brand" id="brand"><br>
 
-        <label for="infix">Tussenvoegsel:</label><br>
-        <input type="text" name="infix" id="infix"><br>
+        <label for="model">modelen</label><br>
+        <input type="text" name="model" id="model"><br>
 
         <label for="lastname">Achternaam:</label><br>
         <input type="text" name="lastname" id="lastname"><br>

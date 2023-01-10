@@ -23,7 +23,7 @@ try {
 
 $sql = "SELECT Id
               ,merk
-              ,Tussenvoegsel
+              ,modelen
               ,Achternaam
         FROM Persoon";
 
@@ -42,7 +42,7 @@ $tableRows = "";
 foreach($result as $info) {
     $tableRows .= "<tr>
                         <td>$info->merk</td>
-                        <td>$info->Tussenvoegsel</td>
+                        <td>$info->modelen</td>
                         <td>$info->Achternaam</td>
                         <td>
                             <a href='delete.php'>
@@ -57,7 +57,7 @@ foreach($result as $info) {
 <table border='1'>
     <thead>
         <th>merk</th>
-        <th>Tussenvoegsel</th>
+        <th>modelen</th>
         <th>Achternaam</th>
         <th></th>
     </thead>

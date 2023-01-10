@@ -16,16 +16,16 @@ try {
 // Maak de sql query voor het inserten van een record
 $sql = "INSERT INTO Persoon (Id
                             ,merk
-                            ,Tussenvoegsel
+                            ,modelen
                             ,Achternaam)
         VALUES              (NULL
                             ,:brand
-                            ,:infix
+                            ,:model
                             ,:lastname);";
 // Maak de query gereed met de prepare-method van het $pdo-object
 $statement = $pdo->prepare($sql);
 $statement->bindValue(':brand', $_POST['brand'], PDO::PARAM_STR);
-$statement->bindValue(':infix', $_POST['infix'], PDO::PARAM_STR);
+$statement->bindValue(':model', $_POST['model'], PDO::PARAM_STR);
 $statement->bindValue(':lastname', $_POST['lastname'], PDO::PARAM_STR);
 // Vuur de query af op de database...
 $statement->execute();
