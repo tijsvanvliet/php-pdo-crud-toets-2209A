@@ -25,6 +25,7 @@ $sql = "SELECT Id
               ,merk
               ,modelen
               ,topsnelheid
+              ,prijs
         FROM Persoon";
 
 //Bereid de de query voor met de method prepare

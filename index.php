@@ -21,6 +21,9 @@
         <label for="topspeed">topsnelheid</label><br>
         <input type="text" name="topspeed" id="topspeed"><br>
 
+        <label for="price">prijs</label><br>
+        <input type="text" name="price" id="price"><br>
+
         <input type="submit" value="Verstuur">
     </form>
 </body>
