@@ -24,7 +24,7 @@ try {
 $sql = "SELECT Id
               ,merk
               ,modelen
-              ,Achternaam
+              ,topsnelheid
         FROM Persoon";
 
 //Bereid de de query voor met de method prepare
@@ -43,7 +43,8 @@ foreach($result as $info) {
     $tableRows .= "<tr>
                         <td>$info->merk</td>
                         <td>$info->modelen</td>
-                        <td>$info->Achternaam</td>
+                        <td>$info->topsnelheid</td>
+                        <td>$info->topsnelheid</td>
                         <td>
                             <a href='delete.php'>
                                 <img src='img/b_drop.png' alt='cross'>
@@ -58,7 +59,8 @@ foreach($result as $info) {
     <thead>
         <th>merk</th>
         <th>modelen</th>
-        <th>Achternaam</th>
+        <th>topsnelheid</th>
+        <th>prijs</th>
         <th></th>
     </thead>
     <tbody>

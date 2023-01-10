@@ -17,16 +17,19 @@ try {
 $sql = "INSERT INTO Persoon (Id
                             ,merk
                             ,modelen
-                            ,Achternaam)
+                            ,topsnelheid
+                            ,prijs)
         VALUES              (NULL
                             ,:brand
                             ,:model
-                            ,:topspeed);";
+                            ,:topspeed
+                            ,:price);";
 // Maak de query gereed met de prepare-method van het $pdo-object
 $statement = $pdo->prepare($sql);
 $statement->bindValue(':brand', $_POST['brand'], PDO::PARAM_STR);
 $statement->bindValue(':model', $_POST['model'], PDO::PARAM_STR);
 $statement->bindValue(':topspeed', $_POST['topspeed'], PDO::PARAM_STR);
+$statement->bindValue(':price', $_POST['price'], PDO::PARAM_STR);
 // Vuur de query af op de database...
 $statement->execute();
 

@@ -18,8 +18,8 @@
         <label for="model">modelen</label><br>
         <input type="text" name="model" id="model"><br>
 
-        <label for="lastname">Achternaam:</label><br>
-        <input type="text" name="lastname" id="lastname"><br>
+        <label for="topspeed">topsnelheid</label><br>
+        <input type="text" name="topspeed" id="topspeed"><br>
 
         <input type="submit" value="Verstuur">
     </form>
