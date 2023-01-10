@@ -26,7 +26,7 @@ $sql = "SELECT Id
               ,modelen
               ,topsnelheid
               ,prijs
-        FROM Persoon";
+        FROM DureAuto";
 
 //Bereid de de query voor met de method prepare
 $statement = $pdo->prepare($sql);
@@ -54,7 +54,7 @@ foreach($result as $info) {
                    </tr>";
 }
 ?>
-<h3>Persoonsgegevens</h3>
+<h3>autos</h3>
 
 <table border='1'>
     <thead>

@@ -31,10 +31,10 @@ USE `php-pdo-crud-2209a`;
 
 DROP TABLE IF EXISTS `Persoon`;
 CREATE TABLE IF NOT EXISTS `Persoon` (
-  `Id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `Voornaam` varchar(60) NOT NULL,
-  `Tussenvoegsel` varchar(10) NOT NULL,
-  `Achternaam` varchar(60) NOT NULL,
+  `Id` smallint(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `merk` varchar(200) NOT NULL,
+  `modelen` varchar(200) NOT NULL,
+  `topsnelheid` varchar(200) NOT NULL,
   PRIMARY KEY (`Id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
 COMMIT;
