@@ -18,10 +18,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `php-pdo-crud-2209a`
+-- Database: `php-pdo-crud-toets`
 --
-CREATE DATABASE IF NOT EXISTS `php-pdo-crud-2209a` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `php-pdo-crud-2209a`;
+CREATE DATABASE IF NOT EXISTS `php-pdo-crud-toets` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `php-pdo-crud-toets`;
 
 -- --------------------------------------------------------
 

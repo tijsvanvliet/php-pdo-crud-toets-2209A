@@ -2,10 +2,11 @@
 /**
  * Maak een verbinding met de mysqlserver en database
  */
+
 include('config.php');
 
 $dsn = "mysql:host=$dbHost;dbname=$dbName;charset=UTF8";
-
+//echo $dsn;exit();
 try {
     $pdo = new PDO($dsn, $dbUser, $dbPass);
     if ($pdo) {
@@ -23,7 +24,7 @@ try {
 
 $sql = "SELECT Id
               ,merk
-              ,modelen
+              ,model
               ,topsnelheid
               ,prijs
         FROM DureAuto";
@@ -43,9 +44,9 @@ $tableRows = "";
 foreach($result as $info) {
     $tableRows .= "<tr>
                         <td>$info->merk</td>
-                        <td>$info->modelen</td>
+                        <td>$info->model</td>
                         <td>$info->topsnelheid</td>
-                        <td>$info->topsnelheid</td>
+                        <td>$info->prijs</td>
                         <td>
                             <a href='delete.php'>
                                 <img src='img/b_drop.png' alt='cross'>
@@ -59,7 +60,7 @@ foreach($result as $info) {
 <table border='1'>
     <thead>
         <th>merk</th>
-        <th>modelen</th>
+        <th>model</th>
         <th>topsnelheid</th>
         <th>prijs</th>
         <th></th>
